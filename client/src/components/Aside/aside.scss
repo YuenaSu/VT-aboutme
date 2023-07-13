@@ -1,0 +1,36 @@
+@import "../../styles/mixins.scss";
+
+
+aside {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include md {
+    width: 100%;
+  }
+}
+
+.main__bavk {
+  width: 50px;
+}
+
+#avatarface {
+  align-items: center;
+  text-align: center;
+}
+
+#turn {
+  &:hover {
+  animation: text-spin infinite 20s linear; 
+  }
+}
+
+@keyframes text-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
